@@ -1,3 +1,3 @@
 #Momentum
 
-Momentum made of vanilla JS
+Momentum made of vanilla JS.
