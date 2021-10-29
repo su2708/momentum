@@ -1,6 +1,6 @@
 const API_KEY = "65f7af0c069d9b5c9486960b40e776a2";
 
-function onGeoOk(position) {
+function currentGeo(position) {
   const lat = position.coords.latitude;
   const lon = position.coords.longitude;
   const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric`;
@@ -14,4 +14,4 @@ function onGeoOk(position) {
     });
 }
 
-navigator.geolocation.getCurrentPosition(onGeoOk);
+navigator.geolocation.getCurrentPosition(currentGeo);
