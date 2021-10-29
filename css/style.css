@@ -1,14 +1,19 @@
 @import "reset.css";
 
 body{
-  position: relative;
-  display: flex;
   height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: white;
+}
+
+#blur {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  color: white;
+  background: rgba(0, 0, 0, 0.2);
 }
 
 .hidden {
@@ -56,6 +61,20 @@ input::placeholder {
 
 #today {
   position: absolute;
+  display: flex;
   bottom: 2%;
   right: 2%;
+}
+
+#date {
+  margin-right: 5px;
+}
+
+button {
+  margin-left: 10px;
+  border: none;
+  border-radius: 5px;
+  justify-content: center;
+  text-align: center;
+  opacity: 0.5;
 }
