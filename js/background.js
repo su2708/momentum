@@ -4,4 +4,4 @@ const bgImage = document.createElement("img");
 
 bgImage.src = `images/${chosenImage}`;
 
-document.body.appendChild(bgImage);
+document.body.style = `background-image: url(images/${chosenImage}); background-size: 100% 100%;`;
