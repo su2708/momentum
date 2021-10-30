@@ -1,4 +1,5 @@
 @import "reset.css";
+@import "input.css";
 
 body{
   height: 100vh;
@@ -13,7 +14,7 @@ body{
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.25);
 }
 
 .hidden {
@@ -28,31 +29,6 @@ body{
 
 form {
   margin: 10px 0px;
-}
-
-input {
-  font-size: 30px;
-}
-
-input[type=text] {
-  border: none;
-  border-bottom: 2px solid white;
-  background: none;
-  color: whitesmoke;
-  text-align: center;
-}
-
-input:focus {
-  outline: none;
-}
-
-input:focus::placeholder {
-  color: transparent;
-}
-
-input::placeholder {
-  color: whitesmoke;
-  justify-content: center;
 }
 
 #greeting {
@@ -76,5 +52,14 @@ button {
   border-radius: 5px;
   justify-content: center;
   text-align: center;
-  opacity: 0.5;
+  opacity: 0.6;
+}
+
+li {
+  margin-bottom: 5px;
+  opacity: 0.9;
+}
+
+li:hover {
+  opacity: 1;
 }
